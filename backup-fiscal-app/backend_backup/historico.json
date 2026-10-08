@@ -1,0 +1,471 @@
+[
+  {
+    "id": "94e9cf4bf522",
+    "data": "07/10/2026 21:19",
+    "duracao": "3s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM",
+    "resultado": "Sucesso",
+    "logs": [
+      {
+        "horario": "21:19:39",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:39",
+        "etapa": "Validação",
+        "mensagem": "Parâmetros e caminhos validados.",
+        "saidaTecnica": "[OK] Conectado a Projeto_bk em localhost",
+        "isError": false
+      },
+      {
+        "horario": "21:19:39",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão: VACUUM. Executando VACUUM...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:40",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão aplicada: VACUUM",
+        "saidaTecnica": "[SQL] VACUUM",
+        "isError": false
+      },
+      {
+        "horario": "21:19:40",
+        "etapa": "Geração do backup",
+        "mensagem": "Executando pg_dump...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:41",
+        "etapa": "Geração do backup",
+        "mensagem": "Backup gerado via pg_dump.",
+        "saidaTecnica": "[OK] C:\\testeb\\backup_Projeto_bk_20261007_211940.sql (31.0 MB)",
+        "isError": false
+      },
+      {
+        "horario": "21:19:41",
+        "etapa": "Criptografia AES",
+        "mensagem": "Criptografando o arquivo (AES-256-GCM)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:41",
+        "etapa": "Criptografia AES",
+        "mensagem": "Arquivo criptografado com a chave informada.",
+        "saidaTecnica": "[OK] AES-256-GCM: backup_Projeto_bk_20261007_211940.sql.enc (31.0 MB)",
+        "isError": false
+      },
+      {
+        "horario": "21:19:41",
+        "etapa": "Compactação ZIP",
+        "mensagem": "Compactando com senha (AES-256)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:42",
+        "etapa": "Compactação ZIP",
+        "mensagem": "Arquivo compactado e protegido por senha.",
+        "saidaTecnica": "[OK] C:\\testeb\\backup_Projeto_bk_20261007_211940.zip (31.0 MB)",
+        "isError": false
+      },
+      {
+        "horario": "21:19:42",
+        "etapa": "Retenção",
+        "mensagem": "Aplicando política de retenção (manter 2)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:42",
+        "etapa": "Retenção",
+        "mensagem": "Mantendo os últimos 2 backups.",
+        "saidaTecnica": "[OK] 0 arquivo(s) antigo(s) removido(s)",
+        "isError": false
+      },
+      {
+        "horario": "21:19:42",
+        "etapa": "Resumo final",
+        "mensagem": "Consolidando o resultado...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "21:19:42",
+        "etapa": "Resumo final",
+        "mensagem": "Backup concluído com sucesso.",
+        "saidaTecnica": "[OK] C:\\testeb\\backup_Projeto_bk_20261007_211940.zip | 31.0 MB | 3s",
+        "isError": false
+      }
+    ],
+    "emailEnviado": false
+  },
+  {
+    "id": "b0e7b06915ee",
+    "data": "07/10/2026 15:55",
+    "duracao": "16s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM FULL ANALYZE",
+    "resultado": "Sucesso",
+    "logs": [
+      {
+        "horario": "15:55:52",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:55:52",
+        "etapa": "Validação",
+        "mensagem": "Parâmetros e caminhos validados.",
+        "saidaTecnica": "[OK] Conectado a postgres em 172.23.8.128",
+        "isError": false
+      },
+      {
+        "horario": "15:55:52",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão: VACUUM FULL ANALYZE. Executando VACUUM FULL ANALYZE...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:56:05",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão aplicada: VACUUM FULL ANALYZE",
+        "saidaTecnica": "[SQL] VACUUM FULL ANALYZE",
+        "isError": false
+      },
+      {
+        "horario": "15:56:05",
+        "etapa": "Geração do backup",
+        "mensagem": "Executando pg_dump...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:56:07",
+        "etapa": "Geração do backup",
+        "mensagem": "Backup gerado via pg_dump.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261007_155605.sql (170.2 MB)",
+        "isError": false
+      },
+      {
+        "horario": "15:56:07",
+        "etapa": "Criptografia AES",
+        "mensagem": "Criptografando o arquivo (AES-256-GCM)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:56:08",
+        "etapa": "Criptografia AES",
+        "mensagem": "Arquivo criptografado com a chave informada.",
+        "saidaTecnica": "[OK] AES-256-GCM: backup_postgres_20261007_155605.sql.enc (170.2 MB)",
+        "isError": false
+      },
+      {
+        "horario": "15:56:08",
+        "etapa": "Retenção",
+        "mensagem": "Aplicando política de retenção (manter 10)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:56:08",
+        "etapa": "Retenção",
+        "mensagem": "Mantendo os últimos 10 backups.",
+        "saidaTecnica": "[OK] 0 arquivo(s) antigo(s) removido(s)",
+        "isError": false
+      },
+      {
+        "horario": "15:56:08",
+        "etapa": "Resumo final",
+        "mensagem": "Consolidando o resultado...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:56:08",
+        "etapa": "Resumo final",
+        "mensagem": "Backup concluído com sucesso.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261007_155605.sql.enc | 170.2 MB | 16s",
+        "isError": false
+      }
+    ],
+    "emailEnviado": false
+  },
+  {
+    "id": "326accbd4310",
+    "data": "07/10/2026 15:55",
+    "duracao": "0s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM FULL ANALYZE",
+    "resultado": "Falha",
+    "logs": [
+      {
+        "horario": "15:55:13",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:55:13",
+        "etapa": "Validação",
+        "mensagem": "[Errno 13] Permission denied: '/backups'",
+        "saidaTecnica": "[ERROR] [Errno 13] Permission denied: '/backups'",
+        "isError": true
+      }
+    ],
+    "emailEnviado": true
+  },
+  {
+    "id": "4ac0d934621a",
+    "data": "05/10/2026 15:06",
+    "duracao": "12s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM FULL ANALYZE",
+    "resultado": "Sucesso",
+    "logs": [
+      {
+        "horario": "15:06:11",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:06:11",
+        "etapa": "Validação",
+        "mensagem": "Parâmetros e caminhos validados.",
+        "saidaTecnica": "[OK] Conectado a postgres em 172.23.8.128",
+        "isError": false
+      },
+      {
+        "horario": "15:06:11",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão: VACUUM FULL ANALYZE. Executando VACUUM FULL ANALYZE...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:06:22",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão aplicada: VACUUM FULL ANALYZE",
+        "saidaTecnica": "[SQL] VACUUM FULL ANALYZE",
+        "isError": false
+      },
+      {
+        "horario": "15:06:22",
+        "etapa": "Geração do backup",
+        "mensagem": "Executando pg_dump...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:06:24",
+        "etapa": "Geração do backup",
+        "mensagem": "Backup gerado via pg_dump.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261005_150622.sql (170.2 MB)",
+        "isError": false
+      },
+      {
+        "horario": "15:06:24",
+        "etapa": "Retenção",
+        "mensagem": "Aplicando política de retenção (manter 10)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:06:24",
+        "etapa": "Retenção",
+        "mensagem": "Mantendo os últimos 10 backups.",
+        "saidaTecnica": "[OK] 0 arquivo(s) antigo(s) removido(s)",
+        "isError": false
+      },
+      {
+        "horario": "15:06:24",
+        "etapa": "Resumo final",
+        "mensagem": "Consolidando o resultado...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:06:24",
+        "etapa": "Resumo final",
+        "mensagem": "Backup concluído com sucesso.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261005_150622.sql | 170.2 MB | 12s",
+        "isError": false
+      }
+    ],
+    "emailEnviado": false
+  },
+  {
+    "id": "39353a5f988d",
+    "data": "05/10/2026 15:03",
+    "duracao": "14s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM FULL ANALYZE",
+    "resultado": "Falha",
+    "logs": [
+      {
+        "horario": "15:03:55",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:03:55",
+        "etapa": "Validação",
+        "mensagem": "Parâmetros e caminhos validados.",
+        "saidaTecnica": "[OK] Conectado a postgres em 172.23.8.128",
+        "isError": false
+      },
+      {
+        "horario": "15:03:55",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão: VACUUM FULL ANALYZE. Executando VACUUM FULL ANALYZE...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:04:10",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão aplicada: VACUUM FULL ANALYZE",
+        "saidaTecnica": "[SQL] VACUUM FULL ANALYZE",
+        "isError": false
+      },
+      {
+        "horario": "15:04:10",
+        "etapa": "Geração do backup",
+        "mensagem": "Executando pg_dump...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:04:10",
+        "etapa": "Geração do backup",
+        "mensagem": "pg_dump falhou: pg_dump: error: aborting because of server version mismatch\npg_dump: detail: server version: 18.4 (Ubuntu 18.4-1.pgdg24.04+1); pg_dump version: 17.10 (Ubuntu 17.10-1.pgdg24.04+1)",
+        "saidaTecnica": "[ERROR] pg_dump falhou: pg_dump: error: aborting because of server version mismatch\npg_dump: detail: server version: 18.4 (Ubuntu 18.4-1.pgdg24.04+1); pg_dump version: 17.10 (Ubuntu 17.10-1.pgdg24.04+1)",
+        "isError": true
+      }
+    ],
+    "emailEnviado": true
+  },
+  {
+    "id": "6af692ec34da",
+    "data": "05/10/2026 15:02",
+    "duracao": "0s",
+    "tipoDecisao": "Manual",
+    "manutencaoAplicada": "VACUUM FULL ANALYZE",
+    "resultado": "Falha",
+    "logs": [
+      {
+        "horario": "15:02:47",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "15:02:47",
+        "etapa": "Validação",
+        "mensagem": "[Errno 13] Permission denied: '/backups'",
+        "saidaTecnica": "[ERROR] [Errno 13] Permission denied: '/backups'",
+        "isError": true
+      }
+    ],
+    "emailEnviado": true
+  },
+  {
+    "id": "202e4079e6a6",
+    "data": "05/10/2026 14:21",
+    "duracao": "2s",
+    "tipoDecisao": "Automática",
+    "manutencaoAplicada": "VACUUM (Entre 30 e 60 dias)",
+    "resultado": "Sucesso",
+    "logs": [
+      {
+        "horario": "14:21:26",
+        "etapa": "Validação",
+        "mensagem": "Validando credenciais, conexão e caminhos...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "14:21:26",
+        "etapa": "Validação",
+        "mensagem": "Parâmetros e caminhos validados.",
+        "saidaTecnica": "[OK] Conectado a postgres em localhost",
+        "isError": false
+      },
+      {
+        "horario": "14:21:26",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão: VACUUM (Entre 30 e 60 dias). Executando VACUUM...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "14:21:26",
+        "etapa": "Manutenção",
+        "mensagem": "Decisão aplicada: VACUUM (Entre 30 e 60 dias)",
+        "saidaTecnica": "[SQL] VACUUM",
+        "isError": false
+      },
+      {
+        "horario": "14:21:26",
+        "etapa": "Geração do backup",
+        "mensagem": "Executando pg_dump...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "14:21:28",
+        "etapa": "Geração do backup",
+        "mensagem": "Backup gerado via pg_dump.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261005_142126.sql (170.2 MB)",
+        "isError": false
+      },
+      {
+        "horario": "14:21:28",
+        "etapa": "Retenção",
+        "mensagem": "Aplicando política de retenção (manter 10)...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "14:21:28",
+        "etapa": "Retenção",
+        "mensagem": "Mantendo os últimos 10 backups.",
+        "saidaTecnica": "[OK] 0 arquivo(s) antigo(s) removido(s)",
+        "isError": false
+      },
+      {
+        "horario": "14:21:28",
+        "etapa": "Resumo final",
+        "mensagem": "Consolidando o resultado...",
+        "saidaTecnica": "[..] em andamento",
+        "isError": false
+      },
+      {
+        "horario": "14:21:28",
+        "etapa": "Resumo final",
+        "mensagem": "Backup concluído com sucesso.",
+        "saidaTecnica": "[OK] /home/luciana/Downloads/backup/backup_postgres_20261005_142126.sql | 170.2 MB | 2s",
+        "isError": false
+      }
+    ],
+    "emailEnviado": false
+  }
+]
